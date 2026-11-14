@@ -1,78 +1,92 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dcomman/dcomman/main/assets/banner-dark.svg">
-  <img src="https://raw.githubusercontent.com/dcomman/dcomman/main/assets/banner-light.svg" alt="Hi, I'm dcomman" width="100%">
-</picture>
+![Light banner](assets/banner-light.svg#gh-light-mode-only)
+![Dark banner](assets/banner-dark.svg#gh-dark-mode-only)
+
+**开源项目维护 · PHP / Laravel / Docker · 当前重心：安全修复与跨大版本升级**
 
 </div>
 
 <!--
   ═══════════════════════════════════════════════════════════════════════════
-  Profile README · 自定义说明（HTML 注释不会渲染，可随时删除）
+  Profile README · 依据《github个人主页美化指南》重构
+
+  【为什么这样写】
+    · 顶部一句话定位：角色 + 技术栈 + 当前重心，10 秒内可读完（指南第二步）。
+    · 正在做的事只放 2 条；不放完整履历、不放 Coming soon 占位。
+    · 技术栈改 shields.io 按 Core / Frameworks / Tools 分组，共 10 个徽章，
+      避开指南明确反对的「几十个图标排成的徽章墙」。
+    · 不放统计卡：github-readme-stats 属第三方服务，指南允许「担心稳定性可不放」；
+      实测本机该域名不可达，且页面零统计依赖更稳。启用方法见文末。
+    · 不放打字动画 / 贪吃蛇 / 宠物卡片 / GitHub Actions：指南最后一条建议
+      「先完成干净、信息准确的静态版本，再逐个添加动态组件」。
 
   【刻意留空、不臆造的内容】
-    姓名 / 所在地 / 公司 / 邮箱 / 博客 / 社交链接 —— 当前一律未填写，
-    因为账号公开资料里没有这些信息。要公开的话由你本人补，见文末「联系」。
+    账号公开资料里 name / bio / blog / location 全部为空，因此没有填写姓名、
+    公司、所在地、邮箱、博客、LinkedIn / X 等任何未经确认的信息。
+    联系方式只保留真实存在的 GitHub 链接——这也符合指南「选你真正会看的渠道」。
 
-  【建议你按意愿修改的地方】
-    1. 关于我       —— 现在是一段中性的、不涉及身份的描述，可改成你自己的话。
-    2. 当前在做     —— 取自当前公开项目的实际工作内容；不想展示技术细节可整段删。
-    3. 技术栈图标   —— 增删 skillicons 的 i= 参数即可；第三方服务，可整段删。
-    4. 数据卡片     —— github-readme-stats 第三方服务，可整段删；删后页面不依赖外部图片。
-    5. 联系         —— 只放了 GitHub 链接；邮箱 / 博客 / 社交链接按需补。
+  【可自定义处（都已就近标注）】
+    1. 一句话定位   —— 请改成你自己的真实角色与重心。
+    2. 正在做的事   —— 取自当前公开项目的实际工作；不想展示技术细节可改写。
+    3. 精选仓库     —— 目前账号只有 1 个公开项目仓库，故只列 1 个；
+                       指南建议 2–3 个，以后有新作品再补，不要凑数。
+    4. 技术栈徽章   —— 增删请连同分组一起调整，总数控制在 8–15 个。
+    5. 联系方式     —— 按需补博客 / LinkedIn / X / 邮箱，只放真正会看的。
 
-  【两处技术注意点】
-    · Banner 用 raw.githubusercontent.com 绝对地址，因为 GitHub 不重写 <source srcset>
-      里的相对路径。若以后改了默认分支名，把上面两条 URL 里的 main 一起改掉。
-    · 浅色 / 深色靠 <picture> 的 prefers-color-scheme 自动切换，无需手动开关。
+  【渲染约束（指南「避坑前提」）】
+    GitHub 会移除 <script>、style 属性、class、id、<iframe>，无 JS 无自定义 CSS。
+    因此本页只用 Markdown + 图片 + align 属性；深浅色靠 GitHub 官方的
+    #gh-light-mode-only / #gh-dark-mode-only 片段，不靠 <style> 或脚本。
+    Banner 用仓库内相对路径，不硬编码 raw 域名与分支名。
+
+  【若以后想启用统计卡（可选，默认关闭）】
+    ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=dcomman&amp;show_icons=true&amp;theme=default)
+    加回前请自行确认该服务在你网络下可访问；徽章超过 15 个时用 <details> 折叠。
 
   【配套设置（不在此文件内，需到 GitHub 设置页手动做）】
     Profile bio、头像、Pinned repositories、Social accounts。
   ═══════════════════════════════════════════════════════════════════════════
 -->
 
-## 👋 关于我
+## 🔭 正在做的事
 
-维护开源项目，关注自托管 Web 应用与长期可维护的代码。习惯先把现状弄清楚，再小步改动，让每一步都能验证、能回滚。
+- **[blessing-skin-server](https://github.com/dcomman/blessing-skin-server)** —— 维护一个上游已停更项目的分支：跟进未修复的安全问题，补回归测试，独立发止血版本。
+- **PHP / Laravel 逐级升级** —— 先摸清依赖阻塞，再动代码；用容器固化构建与验证流程，让升级能在干净环境里完整重跑。
 
-<!-- [可改] 若愿意公开，可在这里补充姓名 / 所在地 / 职业方向；当前未填写任何未经确认的个人信息。 -->
+<!-- [可改] 指南建议 1–2 个当前项目或方向；这里取 2 条。不想公开技术细节可整段改写。 -->
 
-## 🚧 当前在做
+## 📦 精选仓库
 
-- **安全维护** —— 跟进上游已停更项目中未修复的安全问题，补回归测试，独立发止血版本。
-- **版本升级** —— PHP 与 Laravel 的跨大版本逐级升级，先摸清依赖阻塞，再动代码。
-- **可复现环境** —— 用容器固化构建与验证流程，让升级能在干净环境里完整重跑。
+- **[dcomman/blessing-skin-server](https://github.com/dcomman/blessing-skin-server)** — 为离线 Minecraft 服务器提供自定义皮肤的 Web 应用，当前主要维护的分支。
 
-<!-- [可改] 以上来自当前公开项目的实际工作；若不想在个人首页展示具体技术细节，可整段删除或改写。 -->
+<!-- [可改] 账号目前仅此 1 个公开项目仓库，故只列 1 个，不臆造凑数。有新作品后补到 2–3 个。 -->
 
 ## 🛠 技术栈
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=php,laravel,composer,docker,ts,js,mysql,sqlite,nginx,git,linux,bash,github&amp;theme=dark&amp;perline=7">
-    <img src="https://skillicons.dev/icons?i=php,laravel,composer,docker,ts,js,mysql,sqlite,nginx,git,linux,bash,github&amp;theme=light&amp;perline=7" alt="Tech stack">
-  </picture>
-</p>
+**Core**
+[![PHP](https://img.shields.io/badge/PHP-8.5-777BB4?style=flat-square&amp;logo=php&amp;logoColor=white)](https://www.php.net/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white)](https://www.typescriptlang.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&amp;logo=mysql&amp;logoColor=white)](https://www.mysql.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&amp;logo=sqlite&amp;logoColor=white)](https://www.sqlite.org/)
 
-<!-- [可改] 第三方图片服务。想完全自持或担心失效，删掉上面整个 <p> 段落即可。 -->
+**Frameworks**
+[![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&amp;logo=laravel&amp;logoColor=white)](https://laravel.com/)
+[![Composer](https://img.shields.io/badge/Composer-885630?style=flat-square&amp;logo=composer&amp;logoColor=white)](https://getcomposer.org/)
 
-## 📊 GitHub 数据
+**Tools**
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white)](https://www.docker.com/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&amp;logo=git&amp;logoColor=white)](https://git-scm.com/)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&amp;logo=linux&amp;logoColor=black)](https://www.kernel.org/)
+[![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&amp;logo=nginx&amp;logoColor=white)](https://nginx.org/)
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=dcomman&amp;show_icons=true&amp;hide_border=true&amp;theme=dark&amp;title_color=60a5fa&amp;icon_color=a78bfa&amp;bg_color=0d1117&amp;text_color=c9d1d9">
-    <img src="https://github-readme-stats.vercel.app/api?username=dcomman&amp;show_icons=true&amp;hide_border=true&amp;theme=default&amp;title_color=2563eb&amp;icon_color=6366f1&amp;bg_color=ffffff&amp;text_color=24292f" alt="dcomman's GitHub stats" height="165">
-  </picture>
-</p>
-
-<!-- [可改] 同样是第三方服务（github-readme-stats）。它读取公开数据，不需要授权；删掉本段不影响其它内容。 -->
+<!-- [可改] 共 10 个，按 Core / Frameworks / Tools 分组。总数请控制在 8–15 个；超过 15 个用 <details> 折叠次要分组。 -->
 
 ## 📫 联系
 
 GitHub · [@dcomman](https://github.com/dcomman)
 
-<!-- [可改] 如需公开邮箱 / 博客 / 其它社交链接，在这里补；当前不预填。 -->
+<!-- [可改] 按需补博客 / LinkedIn / X / 邮箱，只放你真正会看的渠道；当前不预填。 -->
 
 ---
 
