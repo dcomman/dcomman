@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="Hi, I'm dcomman">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.55" stop-color="#131a2b"/>
+      <stop offset="1" stop-color="#1b1830"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="0.55" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#e879f9"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60a5fa" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#e879f9" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="280" fill="url(#bg)"/>
+
+  <g fill="none" stroke="#a78bfa" stroke-opacity="0.14" stroke-width="2">
+    <circle cx="1050" cy="40" r="110"/>
+    <circle cx="1050" cy="40" r="160"/>
+    <circle cx="1050" cy="40" r="210"/>
+  </g>
+  <g fill="#a78bfa" fill-opacity="0.18">
+    <circle cx="880" cy="34" r="5"/>
+    <circle cx="912" cy="34" r="5"/>
+    <circle cx="944" cy="34" r="5"/>
+    <circle cx="880" cy="66" r="5"/>
+    <circle cx="912" cy="66" r="5"/>
+    <circle cx="944" cy="66" r="5"/>
+    <circle cx="880" cy="98" r="5"/>
+    <circle cx="912" cy="98" r="5"/>
+    <circle cx="944" cy="98" r="5"/>
+  </g>
+
+  <text x="62" y="66" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="3" fill="#8b949e">WELCOME TO MY PROFILE</text>
+
+  <text x="60" y="140" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="68" font-weight="700" fill="url(#ink)">Hi, I'm dcomman</text>
+
+  <text x="62" y="182" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="22" fill="#9aa5b5">Open source · Self-hosted web · Long-term maintenance</text>
+
+  <rect x="62" y="212" width="430" height="4" rx="2" fill="url(#bar)"/>
+</svg>
